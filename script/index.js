@@ -4,7 +4,7 @@ const noticias = document.getElementById("dataJson");
 
 const xhr = new XMLHttpRequest();
 
-xhr.open("GET", "/json/novedades.json", true);
+xhr.open("GET", "../json/novedades.json", true);
 
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4) { // petición terminada
@@ -17,7 +17,7 @@ xhr.onreadystatechange = function() {
           bloque.classList.add("noticia");
           bloque.innerHTML = `
             <div class="noticiaTitulo">
-              <img src="/assets/calendario.png" width="35px" height="35px">
+              <img src="assets/calendario.png" width="35px" height="35px">
               <h3>${noticia.titulo}</h3>
             </div>
             <small>${noticia.fecha}</small>
@@ -26,7 +26,7 @@ xhr.onreadystatechange = function() {
           noticias.appendChild(bloque); //lo agregamos al div "data json" que tenemos en el html
         });
       } catch (e) {
-        console.error("Error al parsear JSON", e);
+        console.error("Error al cargar JSON", e);
       }
     } else {
       console.error("Error al cargar las noticias. Status:", xhr.status);
