@@ -4,7 +4,7 @@ const noticias = document.getElementById("dataJson");
 
 const xhr = new XMLHttpRequest();
 
-xhr.open("GET", "../json/novedades.json", true);
+xhr.open("GET", "json/novedades.json", true);
 
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4) { // petición terminada
