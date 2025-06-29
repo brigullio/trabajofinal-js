@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelNova</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    
+    <header id="headerContacto">
+        <!--nav-->
+        <nav id="nav">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="logo" height="70" width="70">
+                <span>PixelNova</span>
+            </div>
+            <ul class="menu">
+                <li><a href="http://127.0.0.1:5500/html/index.html">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5500/html/galeria.html">Galeria</a></li>
+                <li><a href="http://127.0.0.1:5500/html/presupuesto.html">Presupuesto</a></li>
+                <li><a id="navContacto" href="http://127.0.0.1:5500/html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+     <main id="mainContacto">
+    <!-- Título -->
+    <h2>¿Tienes un proyecto? ¿Quieres colaborar o hacer una consulta?</h2>
+    <p>Contactanos, estaremos encantados de ayudarte.</p>
+
+    <!-- Datos de contacto -->
+    <div class="info-contacto">
+      <p><strong>Nombre del negocio:</strong> Pixel Nova</p>
+      <p><strong>Dirección:</strong> Calle Imaginaria 123, Valencia, España</p>
+      <p><strong>Teléfono:</strong> +34 600 123 456</p>
+      <p><strong>Email:</strong> contacto@pixelnova.com</p>
+    </div>
+
+    <!-- Frase antes del mapa -->
+    <p><strong>Estamos aquí:</strong> Podés encontrarnos en nuestra oficina en Valencia o calcular tu ruta directamente desde el mapa 👇</p>
+
+    <!-- Mapa -->
+    <div id="map"></div>
+  </main>
+
+
+    <footer>
+
+       <div class="textoFooter">
+         <p>© 2025 PixelNova - Todos los derechos reservados</p>
+       </div>
+
+       <div id="redesSociales">
+        <img src="/assets/facebook.png" width="30" height="30" alt="facebook">
+        <img src="/assets/twitter.png" width="30" height="30" alt="twitter">
+        <img src="/assets/instagram.png" width="30" height="30" alt="instagram">
+       </div>
+
+       <div> 
+         <p>Calle Imaginaria 123, Valencia, España</p>
+       </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+     <script src="/script/contacto.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelNova</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/script/presupuesto.js" defer></script>
+</head>
+<body>
+    
+    <header id="headerPresupuesto">
+        <!--nav-->
+        <nav id="nav">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="logo" height="70" width="70">
+                <span>PixelNova</span>
+            </div>
+            <ul class="menu">
+                <li><a href="http://127.0.0.1:5500/html/index.html">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5500/html/galeria.html">Galeria</a></li>
+                <li><a id="navPresupuesto" href="http://127.0.0.1:5500/html/presupuesto.html">Presupuesto</a></li>
+                <li><a href="http://127.0.0.1:5500/html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mainPresupuesto">
+
+    <h1>Obten un presupuesto personalizado</h1>
+
+  <form id="formPresupuesto" novalidate>
+
+    <!-- Datos de contacto -->
+
+    <fieldset>
+      <legend>Datos de contacto</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" maxlength="15" required>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <!-- Presupuesto -->
+
+    <fieldset>
+      <legend>Presupuesto</legend>
+
+      <label for="producto">Producto:</label>
+      <select id="producto" name="producto" required>
+        <option value="" disabled selected>-- Selecciona un producto --</option>
+        <option value="producto1" data-precio="100">Producto 1 (€100)</option>
+        <option value="producto2" data-precio="150">Producto 2 (€150)</option>
+        <option value="producto3" data-precio="200">Producto 3 (€200)</option>
+      </select>
+
+      <label for="plazo">Plazo (en meses o días):</label>
+      <input type="number" id="plazo" name="plazo" min="1" required>
+
+      <p>Extras:</p>
+      <label><input type="checkbox" name="extras" value="extra1" class="extras" data-precio="20"> Extra 1 (+€20)</label>
+      <label><input type="checkbox" name="extras" value="extra2" class="extras" data-precio="30"> Extra 2 (+€30)</label>
+      <label><input type="checkbox" name="extras" value="extra3" class="extras" data-precio="40"> Extra 3 (+€40)</label>
+
+      <p id="presupuestoFinal">Presupuesto final: €0</p>
+    </fieldset>
+
+    <!-- Condiciones y envío -->
+
+    <fieldset>
+      <legend>Condiciones y envío</legend>
+
+      <label>
+        <input type="checkbox" id="aceptarCondiciones" required>
+        Acepto las condiciones de privacidad
+      </label>
+
+    </fieldset>
+
+    <div id="containerFormButton">
+      <button type="submit" class="formButton">Enviar presupuesto</button>
+      <button type="reset" class="formButton">Resetear formulario</button>
+    </div>
+
+  </form>
+
+    </main>
+
+    <footer>
+
+       <div class="textoFooter">
+         <p>© 2025 PixelNova - Todos los derechos reservados</p>
+       </div>
+
+       <div id="redesSociales">
+        <img src="/assets/facebook.png" width="30" height="30" alt="facebook">
+        <img src="/assets/twitter.png" width="30" height="30" alt="twitter">
+        <img src="/assets/instagram.png" width="30" height="30" alt="instagram">
+       </div>
+
+       <div> 
+         <p>Calle Imaginaria 123, Valencia, España</p>
+       </div>
+
+    </footer>
+
+</body>
+</html>
