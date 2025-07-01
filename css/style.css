@@ -347,23 +347,23 @@ section p{
 }
 
 #image1{
-  background-image: url(/assets/foto1.png);
+  background-image: url(../assets/foto1.png);
 }
 
 #image2{
-  background-image: url(/assets/foto2.png);
+  background-image: url(../assets/foto2.png);
 }
 
 #image3{
-  background-image: url(/assets/foto3.png);
+  background-image: url(../assets/foto3.png);
 }
 
 #image4{
-  background-image: url(/assets/foto4.png);
+  background-image: url(../assets/foto4.png);
 }
 
 #image5{
-  background-image: url(/assets/foto5.png);
+  background-image: url(../assets/foto5.png);
 }
 
 #lightbox{
